@@ -23,8 +23,18 @@
   "files": [
     "dist"
   ],
+  "keywords": [
+    "pi-package"
+  ],
+  "scripts": {
+    "build": "bun build ./src/index.ts --outdir dist --target bun",
+    "test": "vitest run",
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
+    "@mariozechner/pi-coding-agent": "^0.50.7",
     "@types/node": "^20.11.5",
     "@typescript-eslint/eslint-plugin": "8.47.0",
     "@typescript-eslint/parser": "8.47.0",
