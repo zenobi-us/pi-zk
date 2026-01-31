@@ -15,7 +15,12 @@ describe('ZkClient', () => {
 
   it('should execute list command correctly', async () => {
     const mockNotes = [
-      { filename: '202401010000.md', path: '202401010000.md', absPath: '/notes/202401010000.md', title: 'Test Note' }
+      {
+        filename: '202401010000.md',
+        path: '202401010000.md',
+        absPath: '/notes/202401010000.md',
+        title: 'Test Note',
+      },
     ];
 
     mockSpawn.mockReturnValue({
@@ -25,21 +30,21 @@ describe('ZkClient', () => {
     });
 
     // Inject mockSpawn
-    const client = new ZkClient({ 
+    const client = new ZkClient({
       notebookDir: '/notes',
-      spawn: mockSpawn as any
+      spawn: mockSpawn as any,
     });
-    
+
     const notes = await client.list();
 
     expect(mockSpawn).toHaveBeenCalledTimes(1);
     const [cmd, options] = mockSpawn.mock.calls[0];
-    
+
     expect(cmd).toEqual(['zk', 'list', '--format', 'json']);
     expect(options.env).toMatchObject({
-      ZK_NOTEBOOK_DIR: '/notes'
+      ZK_NOTEBOOK_DIR: '/notes',
     });
-    
+
     expect(notes).toEqual(mockNotes);
   });
 

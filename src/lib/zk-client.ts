@@ -73,7 +73,7 @@ export class ZkClient {
     try {
       // zk list --format json outputs a JSON array
       return JSON.parse(output);
-    } catch (e) {
+    } catch {
       throw new Error(`Failed to parse zk output: ${output}`);
     }
   }
