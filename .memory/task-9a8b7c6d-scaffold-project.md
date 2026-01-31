@@ -38,3 +38,6 @@ Project structure verified and updated.
 - `src/extension.ts` created.
 - `tests/extension.test.ts` created and passing.
 - Build script verified.
+
+### Correction (2026-01-31)
+User clarified that `mise` was already established as the task runner and scaffolding was largely complete. The `package.json` scripts were updated to proxy to `mise` tasks rather than replacing them. Future tasks should respect `mise.toml` as the source of truth for build/test operations.

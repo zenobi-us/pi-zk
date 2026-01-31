@@ -12,10 +12,12 @@
 ## Status
 **Current Epic**: [Project Scaffolding & Configuration](epic-3f7a91b2-scaffolding.md)
 **Active Phase**: Phase 1: Setup & Configuration
-**Active Task**: None (Align Package Scripts Complete)
+**Active Task**: None
 
 ## Epics
 - [Project Scaffolding & Configuration](epic-3f7a91b2-scaffolding.md) (In Progress)
+  - Completed: [Initialize Scaffolding](task-9a8b7c6d-scaffold-project.md)
+  - Completed: [Align Mise Integration](task-8e7d6c5b-align-mise-integration.md)
 - [Blessed Tools Implementation](epic-8c2d5e1f-blessed-tools.md) (Proposed)
 - [Tool Interception & Hooks](epic-b4a9c6d3-interception.md) (Proposed)
 - [Notebook Auto-Discovery & Context](epic-f1e2d3c4-discovery.md) (Proposed)
