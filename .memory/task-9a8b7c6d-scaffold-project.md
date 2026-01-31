@@ -2,8 +2,8 @@
 id: 9a8b7c6d
 title: Initialize Pi-ZK Package Scaffolding
 created_at: 2026-01-31T21:05:00Z
-updated_at: 2026-01-31T21:05:00Z
-status: todo
+updated_at: 2026-01-31T21:51:00Z
+status: completed
 epic_id: 3f7a91b2
 phase_id: null
 assigned_to: current
@@ -18,13 +18,23 @@ Set up the initial project structure for `pi-zk` as a valid `pi` package with Ty
 None (Foundational task)
 
 ## Steps
-1. [ ] Initialize `package.json` with `bun init`.
-2. [ ] Add `pi-package` keyword and `pi` configuration to `package.json`.
-3. [ ] Install dev dependencies: `typescript`, `@types/node`, `eslint`, `prettier`, `vitest`, `@mariozechner/pi-coding-agent`.
-4. [ ] Create `tsconfig.json` optimized for Bun/Pi extensions.
-5. [ ] Create `mise.toml` for tool management.
-6. [ ] Create basic directory structure (`src/`, `extensions/`, `tests/`).
-7. [ ] Verify build/test scripts run (even if empty).
+1. [x] Initialize `package.json` with `bun init`.
+2. [x] Add `pi-package` keyword and `pi` configuration to `package.json`.
+3. [x] Install dev dependencies: `typescript`, `@types/node`, `eslint`, `prettier`, `vitest`, `@mariozechner/pi-coding-agent`.
+4. [x] Create `tsconfig.json` optimized for Bun/Pi extensions.
+5. [x] Create `mise.toml` for tool management.
+6. [x] Create basic directory structure (`src/`, `extensions/`, `tests/`).
+7. [x] Verify build/test scripts run (even if empty).
 
 ## Expected Outcome
 A clean, buildable project repository ready for extension development.
+
+## Actual Outcome
+Project structure verified and updated.
+- `package.json` updated with keywords, scripts, and dependencies.
+- `tsconfig.json` verified.
+- `mise.toml` verified.
+- Directory structure (`src`, `extensions`, `tests`) created.
+- `src/extension.ts` created.
+- `tests/extension.test.ts` created and passing.
+- Build script verified.
