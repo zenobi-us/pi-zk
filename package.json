@@ -1,6 +1,6 @@
 {
   "name": "@zenobius/pi-zk",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "A pi-mono extension for editing zk notebooks",
   "author": {
     "name": "Zenobius Jiricek",
@@ -26,15 +26,6 @@
   "keywords": [
     "pi-package"
   ],
-  "scripts": {
-    "build": "mise run build",
-    "dev": "mise run dev",
-    "test": "mise run test",
-    "lint": "mise run lint",
-    "lint:fix": "mise run lint_fix",
-    "format": "mise run format",
-    "typecheck": "mise run typecheck"
-  },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
     "@mariozechner/pi-coding-agent": "^0.50.7",
