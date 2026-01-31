@@ -1,5 +1,5 @@
 # Team
 
-| Role | Session ID | Status |
-|------|------------|--------|
-| Agent | current | Working on [Implement Core ZK Wrapper](task-4d3e2f1a-implement-zk-wrapper.md) |
+| Role | Session ID | Epic | Task | Status |
+|------|------------|------|------|--------|
+| Agent | current | [Blessed Tools](epic-8c2d5e1f-blessed-tools.md) | [Implement ZK List Tool](task-7d9e1f3a-implement-zk-list.md) | Planned - awaiting execution approval |
