@@ -27,10 +27,13 @@
     "pi-package"
   ],
   "scripts": {
-    "build": "bun build ./src/index.ts --outdir dist --target bun",
-    "test": "vitest run",
-    "lint": "eslint .",
-    "format": "prettier --write ."
+    "build": "mise run build",
+    "dev": "mise run dev",
+    "test": "mise run test",
+    "lint": "mise run lint",
+    "lint:fix": "mise run lint_fix",
+    "format": "mise run format",
+    "typecheck": "mise run typecheck"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
