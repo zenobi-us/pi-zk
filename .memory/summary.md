@@ -12,7 +12,7 @@
 ## Status
 **Current Epic**: [Project Scaffolding & Configuration](epic-3f7a91b2-scaffolding.md)
 **Active Phase**: Phase 1: Setup & Configuration
-**Active Task**: None (Scaffolding Complete)
+**Active Task**: None (Align Package Scripts Complete)
 
 ## Epics
 - [Project Scaffolding & Configuration](epic-3f7a91b2-scaffolding.md) (In Progress)
